@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 6.0.0
+  - 5.0.0
+  - 4.0.0
+  - 0.12
+  - 0.11
+  - 0.10
+  - iojs-v3.0.0
+  - iojs-v2.0.0
+  - iojs-v1.0.0
+sudo: false
+script:
+  - npm run test-ci
+after_script:
+  - codeclimate-test-reporter < ./coverage/lcov.info
+addons:
+  code_climate:
+    repo_token:
+      secure: "bFl1OZ6mLlDtARkSEo5J5GQsHROKxSvBUvxhHq6SlMJvhTqowOpA8PPmweIY7ZFFyxj5vCy5rvd8J4kc/tg7HdYZcVrsPur+7pCOCyXwrRkOfuLyW+74RVbEmV8SQkW8I+BfGnvjShprN5WI4RbOLo4Y+BS/MnYh8Z+jYPm2rNCVN5KhTIAE1a3WoidU4QGBcZc1b/f0qrSmY7nDdKsAMBXEEC1AQ3fzeEGd+R6Ccx8exduRRSs+eIyi6Vh1GCNXM9rBuX9/eekZYO+MPYjbUBnlGSTcAwA9Ba7lZ9dFqKu1hCC8aSWtcVptQ3k/7Ln6X4plbZ8SIkPFPJFW4B3BuS3Ou1/GNyF4Vi5Ahb9tt6aajU3tM40t+OF8M4bjTehWrNPlVOWF8k7XyjtdKRTf7zH2/sLC/CFF/urY+MhaNgRNyElpZBnGHE62zrWloxVKKYw5IghXW5o/2BvBHYrKPgwjO1Q2Ne9STmfDdc2TC1SJFN79Y6mMudPr/26hg4oDkQoM8Bqg4vc+0/TtYhoACV+hQJTzbg5848RA0MvfgY0jMOENmVPk2uy81+GuMPsE2QpQk4uIPCqOAb8w98XtF8tndQJ00G9X4hbkyG2FnLFtImr93XKwcmWnCjRf53f+RUJNZLWSaPagDMbGC0iTLbEgUXDtjPiRfZBh9Fb0IhY="
