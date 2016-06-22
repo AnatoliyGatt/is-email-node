@@ -8,7 +8,11 @@ describe('is-email', function () {
         });
 
         it('should return false if String is not an email address', function () {
+            assert.equal(isEmail('ryandahl@nodejs.'), false, 'String should not be an email address');
             assert.equal(isEmail('@ryandahl.com'), false, 'String should not be an email address');
+            assert.equal(isEmail('ryandahl.com'), false, 'String should not be an email address');
+            assert.equal(isEmail('ryandahl@nodejs'), false, 'String should not be an email address');
+            assert.equal(isEmail('ryandahl'), false, 'String should not be an email address');
         });
     });
 });
