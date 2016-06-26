@@ -1,6 +1,6 @@
 {
   "name": "is-email-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check if String is an email address.",
   "keywords": [
     "validate",
