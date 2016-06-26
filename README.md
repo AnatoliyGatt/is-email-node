@@ -48,7 +48,7 @@ $ npm test
 
 Distributed under the [MIT License](LICENSE).
 
-[logo]: https://cldup.com/yCdKGBD_Uq.png
+[logo]: https://cldup.com/DgvTaBeAYq.png
 
 [npm-package-url]: https://npmjs.org/package/is-email-node
 
