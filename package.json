@@ -3,7 +3,6 @@
   "version": "1.0.2",
   "description": "Check if String is an email address.",
   "keywords": [
-    "check",
     "validate",
     "email",
     "address",
