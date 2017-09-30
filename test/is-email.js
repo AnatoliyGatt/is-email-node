@@ -1,14 +1,14 @@
 var assert = require('assert');
 var isEmail = require('../lib/is-email');
 
-describe('is-email', function () {
-    describe('init', function () {
-        it('should return true if String is an email address', function () {
+describe('is-email', () => {
+    describe('init', () => {
+        it('should return true if String is an email address', () => {
             assert.equal(isEmail('anatoliy.gatt@aol.com'), true, 'String should be an email address');
             assert.equal(isEmail('a@b.c'), true, 'String should be an email address');
         });
 
-        it('should return false if String is not an email address', function () {
+        it('should return false if String is not an email address', () => {
             assert.equal(isEmail('ryandahl@nodejs.'), false, 'String should not be an email address');
             assert.equal(isEmail('@ryandahl.com'), false, 'String should not be an email address');
             assert.equal(isEmail('ryandahl.com'), false, 'String should not be an email address');
