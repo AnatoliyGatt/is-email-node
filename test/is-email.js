@@ -1,5 +1,5 @@
-var assert = require('assert');
-var isEmail = require('../lib/is-email');
+const assert = require('assert');
+const isEmail = require('../lib/is-email');
 
 describe('is-email', () => {
   describe('init', () => {
