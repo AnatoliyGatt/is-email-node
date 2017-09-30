@@ -1,7 +1,7 @@
 /**
  * @module index
  * @description Entry point for is-email-node module.
- * @version 1.0.2
+ * @version 2.0.0
  * @author Anatoliy Gatt [anatoliy.gatt@aol.com]
  * @copyright Copyright (c) 2016 Anatoliy Gatt
  * @license MIT
