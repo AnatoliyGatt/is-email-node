@@ -23,7 +23,7 @@ Check if `String` is an email address.
 ## Usage Example
 
 ```javascript
-var isEmail = require('is-email-node');
+const isEmail = require('is-email-node');
 
 console.log(isEmail('anatoliy.gatt@aol.com'));
 console.log(isEmail('@ryandahl.com'));
